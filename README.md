@@ -1,9 +1,23 @@
-
 ### Interactive Excel Dashboard For Informing Low Income and Elderly Assistance Grants
 
 You have been tasked with creating an interactive dashboard for an organization that provides assistance for low income and elderly taxpayers. You have been asked to create this dashboard using the 2016 IRS individual tax return data provided. 
 
-1. Start by creating a table containing the state names, the number of total returns filed, and the number of elderly returns filed. Create a calculated column for the percentage of elderly returns out of total returns filed. Be sure to exclude the United States count, given it’s just an aggregation of all other counts. 
+1. Start by creating a table containing the state names, the number of total returns filed, and the number of elderly returns filed. Create a calculated column for the percentage of elderly returns out of total returns filed. Be sure to exclude the United States count, given it’s just an aggregation of all other counts. Create this table in a new worksheet any way you'd like. One function you might find helpful for this task is the `OFFSET()` function.
+
+``` 
+OFFSET(reference, rows, columns, [height], [width])
+reference: starting point
+rows: number of rows down from the starting point
+columns: number of columns to the right of the starting point
+height: height of the returned reference (optional)
+width: width of the returned reference (optional)
+```
+![offset examples](/assets/offset.png)
+
+
+
+
+
 
 2. Minimally, the organization (Hand Up America) wants to be able to see the following information for each state as part of the dashboard:  
 
@@ -20,4 +34,3 @@ You have been tasked with creating an interactive dashboard for an organization 
 5. Pull the list of top 10 states with the highest percentage of <$1 tax returns. Do this also for the highest percentage of >$1,000,000 returns. Can you think of contextual data that could help you understand these results better?
 
 6. Add any other charts or visualizations you think might help guide the decision-making at HUA.
-
